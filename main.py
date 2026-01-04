@@ -3,6 +3,7 @@ from langchain_core.prompts import PromptTemplate
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_ollama import ChatOllama
 
+
 load_dotenv()
 
 def main():
@@ -35,6 +36,7 @@ Musk, küresel aşırı sağ figürlerin, davaların ve siyasi partilerin destek
 
     response = chain.invoke(input={"information": information})
     print(response.content)
+    
 
 if __name__ == "__main__":
     main()
